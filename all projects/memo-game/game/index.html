@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="allert">
+        <div class="best__winners none">
+            <h3 class="best__winners-title"></h3>
+            <table class="best__winners-tabl ">
+                <tr class="best__winners-tr">
+                    <th>ИМЯ</th>
+                    <th>КОЛИЧЕСТВО <br />ХОДОВ</th>
+                </tr>
+            </table>
+            <button class="prev-btn">Назад</button>
+            <button class="new-btn">Новая игра!</button>
+        </div>
+        <div class="allert-wrapper">
+            <div class="allert-wrapper__winn">
+                <div class="cvc">
+                    <p class="allert-wrapper__info"></p>
+                    <button class="allert-wrapper__btn none">X</button>
+                </div>
+                <div class="winner__list-best none">
+                    <p>Список лидеров по категориям:</p>
+                    <div class="button-group">
+                        <button class="c6c">6 карточек</button>
+                        <button class="c12c">12 карточек</button>
+                        <button class="c18c">18 карточек</button>
+                        <button class="c24c">24 карточки</button>
+                        <button class="c30c">30 карточек</button>
+                    </div>
+                </div>
+                <button class="winner-btn none">Сыграть еще раз!</button>
+            </div>
+            <table class="winner__list none">
+                <tr class="winner__title">
+                    <th>КОЛИЧЕСТВО <br />КАРТОЧЕК</th>
+                    <th>ИМЯ</th>
+                    <th>КОЛИЧЕСТВО <br />ХОДОВ</th>
+                </tr>
+            </table>
+        </div>
+        <div class="allert__form" action="#">
+            <div class="allert__form-container">
+                <h1>МЕМО (картины русских художников)</h1> <br />
+                <div class="div1">
+                    <div class="div2">
+                        <span>Введите ваше имя: </span>
+                        <input type="text" class="allert__form-input">
+                    </div>
+                    <div class="div3"><span>Количество карточек: </span>
+                        <input type="number" value="6" class="how__form-input" min="6" step="6" max="30">
+                        <button class="allert__form-btn">Начать</button>
+                    </div>
+                </div>
+            </div>
+            <span class="allert__form-text none">Введите имя!</span>
+        </div>
+        <img class="allert__font none" src="./img/icon-js.png" alt="pictures">
+    </div>
+    <main class="container">
+        <h2 class="memory__title">Memory Game</h2>
+        <div class="container">
+            <div class="card none" data-num="1" data-painting="И.К. Айвазовского 'Девятый вал'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/%D0%90%D0%B9%D0%B2%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%98._%22%D0%94%D0%B5%D0%B2%D1%8F%D1%82%D1%8B%D0%B9_%D0%B2%D0%B0%D0%BB%22..jpg"
+                    alt="9Val">
+            </div>
+            <div class="card none" data-num="1" data-painting="И.К. Айвазовского 'Девятый вал'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/%D0%90%D0%B9%D0%B2%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%98._%22%D0%94%D0%B5%D0%B2%D1%8F%D1%82%D1%8B%D0%B9_%D0%B2%D0%B0%D0%BB%22..jpg"
+                    alt="9Val">
+            </div>
+            <div class="card none" data-num="2" data-painting="В.М. Васнецова 'Богатыри'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Viktor_Vasnetsov_-_%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_-_Google_Art_Project.jpg/1920px-Viktor_Vasnetsov_-_%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_-_Google_Art_Project.jpg"
+                    alt="3bogatirya">
+            </div>
+            <div class="card none" data-num="2" data-painting="В.М. Васнецова 'Богатыри'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Viktor_Vasnetsov_-_%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_-_Google_Art_Project.jpg/1920px-Viktor_Vasnetsov_-_%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_-_Google_Art_Project.jpg"
+                    alt="3bogatirya">
+            </div>
+            <div class="card none" data-num="3" data-painting="Ф.П. Решетникова 'Опять двойка'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/14/Opyat_dvoyka.jpg/825px-Opyat_dvoyka.jpg?20211212131812"
+                    alt="opiyat2">
+            </div>
+            <div class="card none" data-num="3" data-painting="Ф.П. Решетникова 'Опять двойка'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/14/Opyat_dvoyka.jpg/825px-Opyat_dvoyka.jpg?20211212131812"
+                    alt="opiyat2">
+            </div>
+            <div class="card none" data-num="4" data-painting="К.П. Брюллова 'Последний День Помпеи'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Karl_Brullov_-_The_Last_Day_of_Pompeii_-_Google_Art_Project.jpg/1280px-Karl_Brullov_-_The_Last_Day_of_Pompeii_-_Google_Art_Project.jpg"
+                    alt="pompei">
+            </div>
+            <div class="card none" data-num="4" data-painting="К.П. Брюллова 'Последний День Помпеи'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Karl_Brullov_-_The_Last_Day_of_Pompeii_-_Google_Art_Project.jpg/1280px-Karl_Brullov_-_The_Last_Day_of_Pompeii_-_Google_Art_Project.jpg"
+                    alt="pompei">
+            </div>
+            <div class="card none" data-num="5" data-painting="И.Е. Репина 'Запорожцы пишут письмо турецкому султану'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg/1920px-Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg"
+                    alt="pismo">
+            </div>
+            <div class="card none" data-num="5" data-painting="И.Е. Репина 'Запорожцы пишут письмо турецкому султану'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg/1920px-Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg"
+                    alt="pismo">
+            </div>
+            <div class="card none" data-num="6" data-painting="В.Г. Петрова 'Охотники на привале'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wassilij_Grigorjewitsch_Perow_004.jpg/1920px-Wassilij_Grigorjewitsch_Perow_004.jpg"
+                    alt="3hanters">
+            </div>
+            <div class="card none" data-num="6" data-painting="В.Г. Петрова 'Охотники на привале'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wassilij_Grigorjewitsch_Perow_004.jpg/1920px-Wassilij_Grigorjewitsch_Perow_004.jpg"
+                    alt="3hanters">
+            </div>
+            <div class="card none" data-num="7" data-painting="К.С. Малевича 'Черный квадрат'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png/1024px-%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png"
+                    alt="black-scuaier">
+            </div>
+            <div class="card none" data-num="7" data-painting="К.С. Малевича 'Черный квадрат'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png/1024px-%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png"
+                    alt="black-scuaier">
+            </div>
+            <div class="card none" data-num="8" data-painting="И.И. Шишкина 'Утро в лесу'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Shishkin%2C_Ivan_-_Morning_in_a_Pine_Forest.jpg/1920px-Shishkin%2C_Ivan_-_Morning_in_a_Pine_Forest.jpg"
+                    alt="vlesu">
+            </div>
+            <div class="card none" data-num="8" data-painting="И.И. Шишкина 'Утро в лесу'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Shishkin%2C_Ivan_-_Morning_in_a_Pine_Forest.jpg/1920px-Shishkin%2C_Ivan_-_Morning_in_a_Pine_Forest.jpg"
+                    alt="vlesu">
+            </div>
+            <div class="card none" data-num="9" data-painting="К.С. Петрова-Водкина 'Купание красного коня'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bathing_of_a_Red_Horse_%28Petrov-Vodkin%29.jpg/1024px-Bathing_of_a_Red_Horse_%28Petrov-Vodkin%29.jpg"
+                    alt="morozova">
+            </div>
+            <div class="card none" data-num="9" data-painting="К.С. Петрова-Водкина 'Купание красного коня'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bathing_of_a_Red_Horse_%28Petrov-Vodkin%29.jpg/1024px-Bathing_of_a_Red_Horse_%28Petrov-Vodkin%29.jpg"
+                    alt="morozova">
+            </div>
+            <div class="card none" data-num="10" data-painting="И.Е. Репина 'Бурлаки на Волге'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg/1920px-Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg"
+                    alt="burlaki">
+            </div>
+            <div class="card none" data-num="10" data-painting="И.Е. Репина 'Бурлаки на Волге'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg/1920px-Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg"
+                    alt="burlaki">
+            </div>
+            <div class="card none" data-num="11" data-painting="В.А. Серова 'Девочка с персиками'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Valentin_Serov_-_%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0_%D1%81_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%92.%D0%A1.%D0%9C%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_-_Google_Art_Project.jpg/800px-Valentin_Serov_-_%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0_%D1%81_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%92.%D0%A1.%D0%9C%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_-_Google_Art_Project.jpg"
+                    alt="persik">
+            </div>
+            <div class="card none" data-num="11" data-painting="В.А. Серова 'Девочка с персиками'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Valentin_Serov_-_%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0_%D1%81_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%92.%D0%A1.%D0%9C%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_-_Google_Art_Project.jpg/800px-Valentin_Serov_-_%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0_%D1%81_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%92.%D0%A1.%D0%9C%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_-_Google_Art_Project.jpg"
+                    alt="persik">
+            </div>
+            <div class="card none" data-num="12" data-painting="В.Д. Поленова 'Московский дворик'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Moscow_Courtyard_%28Polenov%2C_1878%29_-_Google_Art_Project.jpg/1280px-Moscow_Courtyard_%28Polenov%2C_1878%29_-_Google_Art_Project.jpg"
+                    alt="dvor">
+            </div>
+            <div class="card none" data-num="12" data-painting="В.Д. Поленова 'Московский дворик'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Moscow_Courtyard_%28Polenov%2C_1878%29_-_Google_Art_Project.jpg/1280px-Moscow_Courtyard_%28Polenov%2C_1878%29_-_Google_Art_Project.jpg"
+                    alt="dvor">
+            </div>
+            <div class="card none" data-num="13" data-painting="Б.М. Кустодиева 'Купчиха за чаем'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Boris_Kustodiev_-_Merchant%27s_Wife_at_Tea_-_Google_Art_Project.jpg/1024px-Boris_Kustodiev_-_Merchant%27s_Wife_at_Tea_-_Google_Art_Project.jpg"
+                    alt="tee">
+            </div>
+            <div class="card none" data-num="13" data-painting="Б.М. Кустодиева 'Купчиха за чаем'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Boris_Kustodiev_-_Merchant%27s_Wife_at_Tea_-_Google_Art_Project.jpg/1024px-Boris_Kustodiev_-_Merchant%27s_Wife_at_Tea_-_Google_Art_Project.jpg"
+                    alt="tee">
+            </div>
+            <div class="card none" data-num="14" data-painting="И.Н. Крамского 'Неизвестная'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kramskoy_Portrait_of_a_Woman.jpg/1280px-Kramskoy_Portrait_of_a_Woman.jpg"
+                    alt="no-name">
+            </div>
+            <div class="card none" data-num="14" data-painting="И.Н. Крамского 'Неизвестная'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Kramskoy_Portrait_of_a_Woman.jpg/1280px-Kramskoy_Portrait_of_a_Woman.jpg"
+                    alt="no-name">
+            </div>
+            <div class="card none" data-num="15" data-painting="Б.М. Кустодиева 'Масленица'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg/1920px-Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg"
+                    alt="maslenica">
+            </div>
+            <div class="card none" data-num="15" data-painting="Б.М. Кустодиева 'Масленица'">
+                <img class="back" src="./img/icon-js.png" alt="js">
+                <img class="font"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg/1920px-Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg"
+                    alt="maslenica">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <a class="github" href="https://github.com/Oleegg">Oleegg</a>
+            <p class="year">2022</p>
+            <a href="https://rs.school/js-stage0/"> <svg class="rss">
+                    <use xlink:href="./svg/sprite.svg#rss"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

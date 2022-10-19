@@ -1,0 +1,35 @@
+.sources {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 120px;
+    overflow: auto;
+    align-items: center;
+    font: 300 1em 'Fira Sans', sans-serif;
+		display: none;
+}
+
+.source__item {
+    background: none;
+    border: 1px solid #30c5ff;
+    font: inherit;
+    line-height: 1;
+    margin: 2px;
+    padding: 2px;
+    color: #70d6ff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.source__item:hover,
+.source__item:focus {
+    border-color: #3fcc59;
+    color: #69db7e;
+    box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+    transform: translateY(-1.5px);
+}
+
+.source__item-name {
+    font-weight: 400;
+    white-space: nowrap;
+}

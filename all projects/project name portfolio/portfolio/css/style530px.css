@@ -1,0 +1,141 @@
+@media (max-width: 530px) {
+    body {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+    }
+    h1, h2, h3, h4 {
+        font-family: 'Merriweather';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    .icon-logo{
+        width: 40px;
+    }
+
+    .section-title{
+        padding: 30px 0;        
+    }
+
+    .wrapper-header {       
+        padding: 20px 10px;
+    }
+
+    .close-nav {
+        position: absolute;
+        right: 40px;
+        top: -20px;    
+    }
+
+    .hamburger {
+        margin: 70px 0 0 20px;        
+    }
+
+    .languages {  
+        padding-top: 70px;
+        font-size: 20px;
+        line-height: 24px;          
+    }
+
+    .languages-ru {
+        margin-right: 10px;
+    }
+
+    .slash {   
+        padding-top: 70px;     
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;       
+    }
+
+    .activ-sun-moon{
+        margin: 0;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin: 0 auto;  
+        padding: 10px;  
+    }
+    /*===hero=====*/
+    .wrapper-hero{
+        max-height: 500px;
+    }
+    
+    .container-hero {
+        width: 80%;
+    }
+    
+    .text-hero {
+        display: inline;
+        
+    }
+    .wrapper {
+        padding: 10px;
+    }
+
+    .btn-gold {
+        margin-top: 10px};
+
+    .wrapper-portfolio {
+        max-width: 530px;           
+        }
+
+    .img-portfolio {
+        width: 100%;
+    }
+
+    .wrapper-skills{
+        margin: 0 auto;
+    }
+    
+    .skills-title {
+        margin: 0 auto;
+        width: 50%;
+    } 
+
+    .skills-items{
+        width: 95%;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+
+    .controls{
+        font-size: 12px;
+        height: 45px;
+        grid-template-rows: 40% 10% 1fr;  
+    }
+
+    .btns-controls{
+        width: 25px;
+        height: 25px;
+        margin: 0 10px;
+    }
+
+    .volume-wrapper{
+        width: 60%;
+    }
+
+    .btn-repeat-controls{
+        margin-left: auto;
+    }
+
+    .price-card{
+        width: 95%;
+        height: 450px;
+        padding: 5px;
+    }
+    .contact-container{
+        width: 90%;
+        max-width: 450px;
+    }
+}

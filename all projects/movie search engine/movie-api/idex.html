@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-search-engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="allert none">
+            <span class="allert__text"></span>
+            <button class="allert__btn">Ok</button>
+        </div>
+        <header class="header">
+            <!-- <div class="wrapper"> -->
+            <div class="title">
+                <a href="https://www.themoviedb.org"><svg class="logo movie">
+                        <use xlink:href="./svg/sprite.svg#movie"></use>
+                    </svg></a>
+                <h1 class="title__h1">movie search engine</h1>
+            </div>
+            <div class="form-search" action="#">
+                <div class="form-search__number">
+                    <p class="number__text">number of posts:</p>
+                    <input class="pages__input" type="number" max="20" value="4">
+                </div>
+                <div class="search">
+                    <input class="search__input" type="search" placeholder="Search.."></input>
+                    <button class="search__button">
+                        <svg class="search__logo">
+                            <use xlink:href="./svg/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </header>
+        <main class="main">
+            <div class="content">
+
+            </div>
+            <div class="buttons">
+                <div class="all">
+                    <span class="buttons__span">Всего есть</span>
+                    <input class="buttons__input-all btns" type="number" readonly>
+                    <span class="buttons__span">стр. по запросу <span class="search-query"></span></span></div>
+                <div class="buttons__wrapper">
+                    <button class="buttons__prev btns">prev</button>
+                    <input class="buttons__input btns" type="number" value="1" readonly>
+                    <button class="buttons__next btns">next</button></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a class="github" href="https://github.com/Oleegg"><svg class="logo githubb">
+                    <use xlink:href="./svg/sprite.svg#github"></use>
+                </svg><svg class="logo githubb-mg none">
+                    <use xlink:href="./svg/sprite.svg#git-hub-mg"></use>
+                </svg></a>
+            <p class="year">2022</p>
+            <a href="https://rs.school/js-stage0/"><svg class="rss">
+                    <use xlink:href="./svg/sprite.svg#rss"></use>
+                </svg>
+            </a>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

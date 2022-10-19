@@ -1,0 +1,103 @@
+@media (max-width: 530px) {
+    body {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+    }
+    h1, h2, h3, h4 {
+        font-family: 'Merriweather';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    .section-title{
+        padding: 20px;
+    }
+    .wrapper-header {
+        padding: 10px;
+    }
+
+    .close-nav {
+        position: absolute;
+        right: 40px;
+        top: -20px;    
+    }
+
+    .hamburger {
+        margin-top: 10px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin: 0 auto;  
+        padding: 10px;  
+    }
+    
+    .container-hero {
+        width: 80%;
+    }
+    
+    .text-hero {
+        display: inline;
+        
+    }
+    .wrapper {
+        padding: 10px;
+    }
+
+    .btn-gold {
+        margin-top: 10px};
+
+    .wrapper-portfolio {
+        max-width: 530px;           
+        }
+
+    .img-portfolio {
+        width: 100%;
+    }
+    .languages {  
+        padding-top: 10px;
+        font-size: 20px;
+        line-height: 24px;          
+    }
+    .languages-ru {
+        margin-right: 15px;
+    }
+    .slash {   
+        padding-top: 10px;     
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;       
+    }
+    .skills-items {
+        margin: 0;
+    }
+
+    .skills-item { 
+        width: 100%;
+    }
+
+    .price-card {
+        width: 100%;
+        
+    }
+    
+    .contact-container {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+}

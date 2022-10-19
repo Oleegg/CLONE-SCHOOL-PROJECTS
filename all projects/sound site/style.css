@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    min-height: 320px;
+    color: #fff;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    height: 70px;
+}
+
+.nav-list{
+    display: flex;    
+}
+.bird{    
+    list-style: none;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bird:hover{
+    color: #bdae82;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    fill: #fff;
+    /* fill: #bdae82; */
+    cursor: pointer;
+    margin: 0;
+}
+.icon:hover{
+    fill: #ccc6b4;
+}
+.activ-bird{
+    color: #bdae82;
+    fill: #bdae82;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 140px);
+}
+.button{   
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    background-color: #ccc6b4;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+    
+    -webkit-mask-image: url('./svg/play.svg');
+    -webkit-mask-size: contain;
+    
+}
+.play{
+    -webkit-mask-image: url('./svg/pause.svg');
+    -webkit-mask-size: contain;
+}
+
+.button:hover {
+    background-color: #bdae82;
+}
+.data{
+    display: flex;    
+}
+.data a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;    
+    transition: 0.5s;
+}
+.data a:hover{
+    color: #bdae82;
+}
+.data p{
+    margin-right: 20px ;
+}
+
+
+.rss{    
+    height: 60px;
+   fill: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rss:hover{
+   fill: #bdae82;
+}

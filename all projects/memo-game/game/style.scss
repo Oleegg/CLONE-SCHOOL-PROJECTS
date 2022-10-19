@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 199, 199);   
+    overflow-x: hidden;
+}
+
+.allert{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.99);    
+    z-index: 2;     
+    
+}
+
+.allert-wrapper{
+    
+    margin-bottom: 10px;
+}
+.div1{
+    display: flex;
+}
+.allert-wrapper__winn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.winner__player{
+    color: whitesmoke;
+    list-style: none;
+    font-size: 26px;
+}
+.allert-wrapper__info{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);    
+}
+.allert-wrapper__btn{
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+}
+.allert__form-btn{
+    width: 50px;
+    height: 30px;
+}
+
+.allert__font{
+    max-width: 70%;
+    max-height: 90%;
+}
+.allert__form{
+    display: flex;
+    color: whitesmoke;
+    margin: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.allert__form-input{
+    height: 30px;
+    margin: 10px 30px;
+    padding: 2px 10px;
+}
+.allert__form-text{    
+    font-size: 40px;
+    color: red;
+    margin-left: 30px;
+}
+.how__form-input{
+    width: 50px;
+    height: 40px;
+    margin: 0 30px;
+    font-size: 20px;
+}
+img{
+    padding: 0;
+}
+
+.memory__title{    
+    margin: 0 auto 30px;
+}
+
+.container {
+    max-width: 1400px;
+    max-height: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+.card {
+    min-width:200px;
+    min-height: 100px;
+    position: relative;
+    margin: 5px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+.card:active{
+    transform: translate(0.95);
+    transition: 0.5s;
+}
+.font,
+.back {
+    // width: auto;
+    // height: auto;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    background: #779ebe73;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+.font{
+    transform: rotateY(180deg);
+}
+.card.flip{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.winner-btn{
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+}
+.none{
+    display: none;
+}
+.winner__list{
+    color: aliceblue;
+    border: 2px solid whitesmoke;
+    width: 100%;
+}
+.winner__title{
+    text-align: center;
+    color: aliceblue;    
+}
+.winner__title th{
+    border: 2px solid red;
+}
+.winner__player{
+    text-align: center;
+    border: 2px solid orangered;
+}
+
+
+@media(max-width: 768px){  
+    .div2 span{
+        margin-right: 20px;
+    }  
+    .allert__form-input{
+        margin: 20px  0;
+    }
+    
+    .allert__form-btn{
+        width: 60%;
+        margin: 20px;
+        border: 3px double rgb(0, 0, 0);
+    }
+    .allert__form-text{
+        position: absolute;
+        top: -40px;
+        left: 30%;
+    }
+}
